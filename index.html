@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learn CSS/HTML Basics</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="bg-indigo-600 text-white p-4 text-center text-3xl font-bold shadow-md">
+    Learn CSS/HTML Basics
+  </header>
+
+  <main class="p-6 max-w-5xl mx-auto space-y-10">
+
+    <!-- Intro Section -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-2">👋 Welcome</h2>
+      <p class="bg-white p-4 rounded shadow">
+        This site is designed to help you learn the basics of HTML and CSS in a simple and fun way. Try examples, read explanations, and build your first web page!
+      </p>
+    </section>
+
+    <!-- HTML Basics -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-2">🧱 HTML Basics</h2>
+      <ul class="list-disc list-inside bg-white p-4 rounded shadow space-y-2">
+        <li><strong>&lt;html&gt;</strong> - Root of the page</li>
+        <li><strong>&lt;head&gt;</strong> - Metadata, title, links</li>
+        <li><strong>&lt;body&gt;</strong> - Content shown to users</li>
+        <li><strong>&lt;h1&gt;-&lt;h6&gt;</strong> - Headings</li>
+        <li><strong>&lt;p&gt;</strong> - Paragraph</li>
+        <li><strong>&lt;a&gt;</strong> - Links</li>
+        <li><strong>&lt;img&gt;</strong> - Images</li>
+      </ul>
+    </section>
+
+    <!-- CSS Basics -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-2">🎨 CSS Basics</h2>
+      <ul class="list-disc list-inside bg-white p-4 rounded shadow space-y-2">
+        <li><strong>color</strong> – changes text color</li>
+        <li><strong>background-color</strong> – changes background</li>
+        <li><strong>font-size</strong> – changes size of text</li>
+        <li><strong>padding</strong> – space inside an element</li>
+        <li><strong>margin</strong> – space outside an element</li>
+      </ul>
+    </section>
+
+    <!-- Try It Yourself -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-2">🧪 Try It Yourself</h2>
+      <div class="bg-white p-4 rounded shadow">
+        <label class="block font-medium mb-2">Choose a background color:</label>
+        <input id="colorInput" type="text" placeholder="e.g. lightblue, red, yellow" class="border p-2 rounded w-full mb-4" />
+        <button onclick="changeColor()" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-800">Apply Color</button>
+      </div>
+    </section>
+
+    <!-- Code Example -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-2">📄 Sample HTML Code</h2>
+      <pre class="bg-gray-200 p-4 rounded shadow overflow-x-auto text-sm">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My Web Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body style=\"background-color: lightblue;\"&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+      </pre>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center p-4 bg-indigo-700 text-white mt-10">
+    © 2025 Learn CSS/HTML Basics. Built for Beginners.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function changeColor() {
+      const color = document.getElementById('colorInput').value;
+      document.body.style.backgroundColor = color || 'white';
+    }
+  </script>
+</body>
+
+</html>
